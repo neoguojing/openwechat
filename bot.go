@@ -42,6 +42,11 @@ func (b *Bot) Alive() bool {
 	}
 }
 
+// 设置热登录存储
+func (b *Bot) SetHotStorage(storage HotReloadStorage) {
+	b.hotReloadStorage = storage
+}
+
 // GetCurrentUser 获取当前的用户
 //
 //	self, err := bot.GetCurrentUser()
